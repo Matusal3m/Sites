@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --cor1: #37748C;
+    --cor2: #7EADBF;
+    --cor3: #D99873;
+    --cor4: #F2EEEB;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor1);
+}
+
+main{
+    /* centralização de tudo */
+    position: absolute;
+    top: 50%; left: 50%;
+    /* resto do estilo */
+    width: 260px;
+    background-color: white;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+div#image{
+    display: block;
+    background:var(--cor4) url(../image/snow.jpg) center center no-repeat;
+    background-size: cover;
+    height: 163px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div#login{
+    display: block;
+    padding: 5px;
+}
+
+.campo{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    border: 2px solid var(--cor1);
+    margin: 5px 0px;
+}
+
+.campo input:focus-within{
+    background-color: white;
+}
+
+.campo > input{
+    font-size: 1em;
+    background: var(--cor2);
+    width: calc(100% - 45px);
+    height: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    transform: translateY(-.5px);
+}
+
+.campo span{
+    width: 40px;
+    font-size: 2em;
+    transform: translate(5px, 6px)
+}
+
+label{
+    display: none;
+}
+
+#login h1{
+    text-align: center;
+    color: var(--cor1);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.145)   ;
+}
+
+#login p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+main a{
+    display: block;
+    flex-direction: row;
+    width: 90%;
+    text-align: center;
+    border: 1px solid var(--cor1);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #7eadbf30;
+    text-decoration: none;
+}
+
+main a:hover {
+    background-color: var(--cor2);
+    color: rgba(0, 0, 255, 0.308);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+#submit{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid var(--cor1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.191);
+}
+
+#carta{
+    font-size: .8em;
+}
+

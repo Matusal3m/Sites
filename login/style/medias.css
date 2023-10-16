@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    :root{
+        --cor1: #37748C;
+        --cor2: #7EADBF;
+        --cor3: #D99873;
+        --cor4: #F2EEEB;
+    }
+
+    body{
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor4));
+    }
+
+    main{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    main > #image{
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: top center;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #login{
+        float: right;
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), var(--cor4));
+    }
+
+    main{
+        width: 990px;
+        height: 300px;
+    }
+
+    main > #image{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background-position: top center;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #login{
+        float: right;
+        width: 50%;
+    }
+
+}
